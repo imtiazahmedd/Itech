@@ -14,7 +14,7 @@ export default class Registration extends Component{
                     <Text style={{color:'white',  marginLeft: width* 0.2}}>Beautiful, Private Sharing</Text>
                 </View>
                 <View style={{width:width, height: height* 0.55, alignItems:'center'}}>
-                    <TouchableOpacity style={{width: width* 0.6, height: height* 0.09, backgroundColor:'white', borderRadius: 10, marginTop: height * 0.06, justifyContent:'center', alignItems:'center'}}>
+                    <TouchableOpacity onPress={()=> this.props.navigation.navigate("SignUpScreen", {screen: "SignUpScreen"})} style={{width: width* 0.6, height: height* 0.09, backgroundColor:'white', borderRadius: 10, marginTop: height * 0.06, justifyContent:'center', alignItems:'center'}}>
                         <Text style={{color:'red', fontSize: 20, fontWeight:'bold'}}>Sign Up</Text>
                     </TouchableOpacity>
                     <Text style={{color:'white', marginTop: height* 0.03}}>Already have a Path account?</Text>
